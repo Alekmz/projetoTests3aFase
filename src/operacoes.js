@@ -9,6 +9,9 @@ export function executarOperacao(a, b, operacao) {
         return a * b
     }
     else if (operacao == "divisao") {
+        if(a === 0 || b === 0) {
+            return "Erro"
+        }
         return a / b
     }
     else if (operacao == "subtracao") {
